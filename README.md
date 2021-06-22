@@ -61,6 +61,8 @@ Historical Housing  Data for the Toronto ON is based on census data aret stored 
 ---
 ## Ouput
 
+**Sample outputs** stored in Output folder
+
 1. Bar chart showing dwelling type per year
 
    |**Dwelling Types in Toronto in 2001**|**Dwelling Types in Toronto in 2006**|
