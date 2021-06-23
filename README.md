@@ -59,6 +59,21 @@ Historical Housing  Data for the Toronto ON is based on census data aret stored 
 * [DashBoard](Dashboard.ipynb)
 
 ---
+## **Using the Dashboard**
+The dashboard shows the real estate analysis for Toronto real estate market from 2001 to 2016. To run the dashboard from Terminal or Gitbash
+
+![dashboard_run](Output/Run_Dashboard.png)
+
+1. Navigate to the main folder where the project is cloned from github
+2. Run the below in Terminal/Gitbash as shown in the screenshot above
+```sh
+       conda activate pyvizenv
+   ```
+3. Run the jupyter notebook [DashBoard](Dashboard.ipynb)
+```sh
+      panel serve Dashboard.ipynb
+```
+---
 ## Ouput
 
 **Sample outputs** stored in Output folder
@@ -68,7 +83,7 @@ Historical Housing  Data for the Toronto ON is based on census data aret stored 
    |**Dwelling Types in Toronto in 2001**|**Dwelling Types in Toronto in 2006**|
    | :------------- | :----------|
    |![image1](Output/bar2001.png)|![image2](Output/bar2006.png)|
-   |**Dwelling Types in Toronto in 2011**|**Dwelling Types in Toronto in 20166**|
+   |**Dwelling Types in Toronto in 2011**|**Dwelling Types in Toronto in 2016**|
    |![image3](Output/bar2011.png)|![image4](Output/bar2016.png)|
 
 2.  Line Chart showing Average Cost of Owned & Rented Dwelling
@@ -109,4 +124,18 @@ Historical Housing  Data for the Toronto ON is based on census data aret stored 
 
      ![image14](Output/Dashboard.png)
 
+
+----
+## **Troubleshooting**
+
+1. First, make sure you are not importing hvplot.pandas before a pn.extension().  Loading hvplot.pandas first initializes a Holoviews extension and causes the Panel extension to fail.
+
+2. Sometimes Bokeh server doesnot automatically launch the webpage with the dashboard. In such cases, copy the hyperlink appearing the terminal/gitbash and paste it new browsing tab to view the dashboard.
+
+      ![dashboard_run](Output/Run_Dashboard.png)
+
+For example,In the above screenshot the hyperlink is 
+```sh
+      http://localhost:5006/Dashboard
+```
 
